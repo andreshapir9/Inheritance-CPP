@@ -16,7 +16,7 @@
 // Doctor class definition
 class Doctor : public Person {
 public:
-	// LIFECYCLE
+// LIFECYCLE
 	/** Default + Overloaded constructor.
 	*/
 	Doctor(const string& = "", int = 0, char = '/0', const string& = "", int = 0);
@@ -26,7 +26,7 @@ public:
 	// Doctor& operator=(const Doctor&);
 	// ~Doctor();
 
-	// OPERATIONS
+// OPERATIONS
 	/** function that depicts checking (patients) by Doctor.
 	*
 	* @param void
@@ -64,7 +64,7 @@ public:
 
 private:
 
-	// DATA MEMBERS
+// DATA MEMBERS
 	int mSalary;
 };
 // end class Doctor
