@@ -1,32 +1,50 @@
-#include "Teacher.h" 
+/**
+* @file Task1_main.cpp
+*
+* @brief This code implements inheritance (Task/Example1).
+*
+* @author Saif Ullah Ijaz
+*
+*/
+
+// SYSTEM INCLUDES
+#include <iostream> 
+#include <string>
+using namespace std;
+
+// LOCAL INCLUDES
 #include "Student.h" 
-#include "Doctor.h" 
+#include "Teacher.h" 
+#include "Doctor.h"
 
 
-void main(){ 
-	Student s1("Muhammad Rafael", 17, 'M', "Computer Science", 2014 ); 
-	Teacher t1("Saif Ullah Ijaz", 28, 'M', "Lecturer"); 
-	Doctor d1("Dr. Sajida Hussain",40,'F',"Neurosurgeon", 500000); 
+// function main begins program execution
+void main() {
+	Student s1("Muhammad Rafael", 17, 'M',"student", "Computer Science", 2014);
+	Teacher t1("Saif Ullah Ijaz", 28, 'M', "Lecturer");
+	Doctor d1("Dr. Sajida Hussain", 40, 'F', "Neurosurgeon", 500000);
 	
-	cout << "Student 1: " << endl << "Name: " << s1.getName() << endl << "Gender: " << s1.getGender() << endl; 
-	cout << "Program: " << s1.getProgram() << endl; 
-	cout << "Year of Study: " << s1.getStudyYear() << endl; 
-	s1.eat(); 
-	s1.walk(); 
-	s1.study(); 
-	s1.heldExam(); 
-	
-	cout << endl << "Teacher 1: " << endl << "Name: " << t1.getName() << endl << "Gender: " << t1.getGender() << endl; 
-	t1.eat(); 
-	t1.walk(); 
-	t1.teach(); 
-	t1.takeExam(); 
-	
-	cout << endl << "Doctor 1: " << endl << "Name: " << d1.getName() << endl << "Gender: " << d1.getGender() << endl; 
-	d1.eat(); 
-	d1.walk(); 
-	d1.checkUp(); 
-	d1.prescribe(); 
-	
-	system("pause"); 
+
+	cout << "Student 1: " << endl << "Name: " << s1.GetName() << endl << "Gender: " << s1.GetGender() << endl;
+	cout << "Program: " << s1.GetProgram() << endl;
+	cout << "Year of Study: " << s1.GetStudyYear() << endl;
+	s1.Eat();
+	s1.Walk();
+	s1.Study();
+	s1.HeldExam();
+
+	cout << endl << "Teacher 1: " << endl << "Name: " << t1.GetName() << endl << "Gender: " << t1.GetGender() << endl;
+	t1.Eat();
+	t1.Walk();
+	t1.Teach();
+	t1.TakeExam();
+
+	cout << endl << "Doctor 1: " << endl << "Name: " << d1.GetName() << endl << "Gender: " << d1.GetGender() << endl;
+	d1.Eat();
+	d1.Walk();
+	d1.CheckUp();
+	d1.Prescribe();
+
+	system("pause");
 }
+// end main
